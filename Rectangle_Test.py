@@ -13,11 +13,9 @@ panel.append(input("Ingrese las medidas de los paneles\nPrimer Lado: "))
 panel.append(input("Segundo Lado: "))
 print(x)
 if (int(x)==1):
-    print("triangulo")
     techo.append(input("Ingrese las medidas del techo\nLado Base: "))
     techo.append(input("Lados Laterales: "))
 else:
-    print("rectangulo")
     techo.append(input("Ingrese las medidas del techo\nPrimer Lado: "))
     techo.append(input("Segundo Lado: "))
 
@@ -29,8 +27,8 @@ def paneles_solares(panel,techo,x):
         resultado = 0
         return(print("El resultado es:",resultado,"ya que no hay espacio suficiente"))
     if(int(x)==1):
-        h=math.sqrt((int(techo[1])*int(techo[1]))-((int(techo[0])/2)*(int(techo[0])/2)))
-        print("raiz h")
+        h=(int(techo[1])*int(techo[1]))-((int(techo[0])/2)*(int(techo[0])/2))
+        h= math.sqrt(h)
 
         areaTecho = (int(techo[0])* h)/2
         areaPaneles = int(panel[0])*int(panel[1])
