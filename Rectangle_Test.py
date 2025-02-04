@@ -11,7 +11,7 @@ x=input("Si el techo tiene forma de triangulo isoceles,ingrese 1\nSi el techo ti
 
 panel.append(input("Ingrese las medidas de los paneles\nPrimer Lado: "))
 panel.append(input("Segundo Lado: "))
-print(x)
+
 if (int(x)==1):
     techo.append(input("Ingrese las medidas del techo\nLado Base: "))
     techo.append(input("Lados Laterales: "))
