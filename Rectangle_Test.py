@@ -28,7 +28,7 @@ def paneles_solares(panel,techo,x):
     if(int(techo[1])<int(techo[0]) and int(techo[1])< int(panel[1]) ):
         resultado = 0
         return(print("El resultado es:",resultado,"ya que no hay espacio suficiente"))
-    if(x==1):
+    if(int(x)==1):
         h=math.sqrt((int(techo[1])*int(techo[1]))-((int(techo[0])/2)*(int(techo[0])/2)))
         print("raiz h")
 
